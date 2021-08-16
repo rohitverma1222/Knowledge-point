@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,300;1,500&family=Qahiri&display=swap" rel="stylesheet">
+<link  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" >
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<script src="https://use.fontawesome.com/18a5f03e14.js"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+      <nav>
+          <a href="/"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navlink">
+              <ul>
+                <div class="center-me">
+                <i class="fa fa-times-circle-o fa-5x" class="size" onclick="hidemenu()" ></i>
+              </div>
+                  <li onmouseover="hov(this)" ><a href="/">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+          </div>
+
+            <i class="fa fa-bars fa-5x " onclick="showmenu()"></i>
+
+      </nav>
+
+
+        <h1>Contact us</h1>
+
+    </section>
+
+    <!-- about us content -->
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.7922151045964!2d77.02985261508265!3d28.635988982416524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d056cf1965c55%3A0xe8c67c3b4eb629ce!2sKnowledge%20Point!5e0!3m2!1sen!2sin!4v1629091630302!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+
+    <section class="contact-us">
+        <h1 class="contact-head">Contact us</h1>
+        <p>Fill this form so we can Contact you</p>
+      <div class="rowss">
+        <div class="contact-col">
+          <form class="" action="index.html" method="post">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter email address " required>
+            <input type="text" placeholder="Enter subject you want to study" required>
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn" id="send-btn"> Send Message</button>
+          </form>
+
+        </div>
+<div class="contact-details">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>xyz Building</h5>
+              <p>gandhi Chowk</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+1 0000432</h5>
+              <p>Abhishek </p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>ingo@KP</h5>
+              <p>gandhi Chowk</p>
+            </span>
+          </div>
+        </div>
+        </div>
+
+<!-- form -->
+
+      </div>
+    </section>
+</body>
+
+
+   <!-- footer -->
+   <section class="footer">
+       <h4>About US</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laboriosam voluptates! Rerum, saepe. Eius, illum sunt dolores ad odio id veritatis animi impedit cum, optio voluptatum ratione ut, at totam?</p>
+   <div class="icons">
+     <i class="fa fa-facebook fa-3x"></i>
+     <i class="fa fa-instagram fa-3x"></i>
+     <i class="fa fa-youtube fa-3x"></i>
+     <i class="fa fa-linkedin fa-3x"></i>
+   </div>
+   <p>Made with <i class="fa fa-heart"></i> by Rohit</p>
+    </section >
+
+<!-- javascript for toggle menu -->
+<script>
+var nav=document.getElementById("navlink");
+function showmenu()
+{
+
+    nav.style.display="block";
+        nav.classList.add("animate1");
+       setTimeout(function(){
+           nav.classList.remove("animate1");
+       }, 1000);
+
+}
+function hidemenu()
+{
+
+
+    nav.classList.add("animate2");
+    setTimeout(function(){
+        nav.classList.remove("animate2");
+        nav.style.display="none";
+    }, 1000);
+
+}
+
+
+</script>
+</html>
