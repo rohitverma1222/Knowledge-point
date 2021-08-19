@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gallery KP</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,300;1,500&family=Qahiri&display=swap" rel="stylesheet">
+<link  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" >
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<script src="https://use.fontawesome.com/18a5f03e14.js"></script>
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.gallery-header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+</head>
+<body>
+    <section class="sub-header">
+      <nav>
+          <a href="/"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navlink">
+              <ul>
+                <div class="center-me">
+                <i class="fa fa-times-circle-o fa-5x" class="size" onclick="hidemenu()" ></i>
+              </div>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+          </div>
+
+            <i class="fa fa-bars fa-5x " onclick="showmenu()"></i>
+
+      </nav>
+
+
+        <h1>Gallery</h1>
+
+    </section>
+
+    <!-- about us content -->
+    <div class="gallery-header">
+      <h1>Event of 2021</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+      <img src="images/gb.jpeg" style="width:100%">
+      <img src="images/gb.jpeg" style="width:100%">
+      <img src="images/gb.jpeg" style="width:100%">
+      <img src="images/gb.jpeg" style="width:100%">
+      <img src="images/gb.jpeg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+      </div>
+      <div class="column">
+    <img src="images/gb.jpeg" style="width:100%">
+    <img src="images/gb.jpeg" style="width:100%">
+    <img src="images/gb.jpeg" style="width:100%">
+    <img src="images/gb.jpeg" style="width:100%">
+    <img src="images/gb.jpeg" style="width:100%">
+    <img src="images/gb.jpeg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+        <img src="images/gb.jpeg" style="width:100%">
+      </div>
+    </div>
+    <!-- footer -->
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laboriosam voluptates! Rerum, saepe. Eius, illum sunt dolores ad odio id veritatis animi impedit cum, optio voluptatum ratione ut, at totam?</p>
+    <div class="icons">
+      <i class="fa fa-facebook fa-3x"></i>
+      <i class="fa fa-instagram fa-3x"></i>
+      <i class="fa fa-youtube fa-3x"></i>
+      <i class="fa fa-linkedin fa-3x"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Rohit</p>
+     </section>
+   </body>
+<!-- javascript for toggle menu -->
+<script>
+var nav=document.getElementById("navlink");
+function showmenu()
+{
+
+    nav.style.display="block";
+        nav.classList.add("animate1");
+       setTimeout(function(){
+           nav.classList.remove("animate1");
+       }, 1000);
+
+}
+function hidemenu()
+{
+
+
+    nav.classList.add("animate2");
+    setTimeout(function(){
+        nav.classList.remove("animate2");
+        nav.style.display="none";
+    }, 1000);
+
+}
+</script>
+</html>
